@@ -1,4 +1,10 @@
 @charset "UTF-8";
+:root {
+  --pink: #ff278b;
+  --yellow: #fff500;
+  --grey: #dddddd;
+}
+
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -471,9 +477,7 @@ ul {
 .subscriptions-subscribe button.button-primary:hover,
 .subscriptions-subscribe button[data-selected="true"]:hover,
 .requests-table-toolbar .organization-subscribe button.button-primary:hover,
-.requests-table-toolbar
-  .organization-subscribe
-  button[data-selected="true"]:hover,
+.requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover,
 .community-follow button.button-primary:hover,
 .article-subscribe button.button-primary:hover,
 .article-subscribe button[data-selected="true"]:hover,
@@ -488,9 +492,7 @@ ul {
 .subscriptions-subscribe button.button-primary:focus,
 .subscriptions-subscribe button[data-selected="true"]:focus,
 .requests-table-toolbar .organization-subscribe button.button-primary:focus,
-.requests-table-toolbar
-  .organization-subscribe
-  button[data-selected="true"]:focus,
+.requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus,
 .community-follow button.button-primary:focus,
 .article-subscribe button.button-primary:focus,
 .article-subscribe button[data-selected="true"]:focus,
@@ -505,9 +507,7 @@ ul {
 .subscriptions-subscribe button.button-primary:active,
 .subscriptions-subscribe button[data-selected="true"]:active,
 .requests-table-toolbar .organization-subscribe button.button-primary:active,
-.requests-table-toolbar
-  .organization-subscribe
-  button[data-selected="true"]:active,
+.requests-table-toolbar .organization-subscribe button[data-selected="true"]:active,
 .community-follow button.button-primary:active,
 .article-subscribe button.button-primary:active,
 .article-subscribe button[data-selected="true"]:active,
@@ -1515,6 +1515,83 @@ ul {
 .home-section h2 {
   margin-bottom: 10px;
   text-align: center;
+}
+
+/***** Core resources *****/
+.core-resources {
+  padding-bottom: 2rem;
+}
+.core-resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.core-resources-item a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid var(--grey);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  transition:
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.core-resources-item a:hover {
+  border-color: var(--pink);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-0.125rem);
+}
+.core-resources-item a:hover footer {
+  background-size: 100% 100%;
+}
+.core-resources-item a:hover footer svg {
+  transform: translateX(4px);
+}
+.core-resources-item header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.core-resources-item header svg {
+  height: 3rem;
+  width: 3rem;
+  background: var(--pink);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.core-resources-item header h3 {
+  margin: 0;
+  color: #333;
+}
+.core-resources-item article p {
+  font-size: 0.875rem;
+  color: #333;
+  padding: 0 1rem;
+}
+.core-resources-item footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  transition: background-size 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: fit-content;
+}
+.core-resources-item footer span {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #333;
+}
+.core-resources-item footer svg {
+  transition: transform 0.2s ease;
 }
 
 /***** Promoted articles *****/
@@ -4517,21 +4594,15 @@ ul {
 .search-results-sidebar .collapsible-sidebar {
   margin-bottom: 30px;
 }
-.search-results-sidebar
-  .collapsible-sidebar[aria-expanded="false"]
-  .multibrand-filter-list {
+.search-results-sidebar .collapsible-sidebar[aria-expanded="false"] .multibrand-filter-list {
   display: none;
 }
 @media (min-width: 1024px) {
-  .search-results-sidebar
-    .collapsible-sidebar[aria-expanded="false"]
-    .multibrand-filter-list {
+  .search-results-sidebar .collapsible-sidebar[aria-expanded="false"] .multibrand-filter-list {
     display: block;
   }
 }
-.search-results-sidebar
-  .multibrand-filter-list--collapsed
-  li:nth-child(1n + 6) {
+.search-results-sidebar .multibrand-filter-list--collapsed li:nth-child(1n + 6) {
   display: none;
 }
 .search-results-sidebar .multibrand-filter-list .doc-count {
