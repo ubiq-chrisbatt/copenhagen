@@ -19,173 +19,284 @@
 </section>
 
 <div class="container">
-  <section class="section knowledge-base">
-    <section class="core-resources">
-      <h2 class="visibility-hidden">Core Resources</h2>
-      <ul class="core-resources-list">
-        <li class="core-resources-item">
-          <a>
-            <header>
-              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff">
-                <path
-                  d="M730-450v-60h150v60H730Zm50 290-121-90 36-48 121 90-36 48Zm-82-503-36-48 118-89 36 48-118 89ZM210-200v-160h-70q-24.75 0-42.37-17.63Q80-395.25 80-420v-120q0-24.75 17.63-42.38Q115.25-600 140-600h180l200-120v480L320-360h-50v160h-60Zm250-146v-268l-124 74H140v120h196l124 74Zm100 0v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346ZM300-480Z"
-                />
-              </svg>
-              <h3>Announcements</h3>
-            </header>
-            <article>
-              <p>Important updates, scheduled maintenance, policy changes, and news from the AMAIS team.</p>
-            </article>
-            <footer>
-              <span>See what's new</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16px"
-                viewBox="0 -960 960 960"
-                width="16px"
-                fill="#000000"
-              >
-                <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
-              </svg>
-            </footer>
-          </a>
-        </li>
-        <li class="core-resources-item">
-          <a>
-            <header>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="32px"
-                viewBox="0 -960 960 960"
-                width="32px"
-                fill="#ffffff"
-              >
-                <path
-                  d="M320-460h320v-60H320v60Zm0 120h320v-60H320v60Zm0 120h200v-60H320v60ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z"
-                />
-              </svg>
-              <h3>Release Notes</h3>
-            </header>
-            <article>
-              <p>
-                Stay up to date with the latest features, improvements, and fixes across all AMAIS products and
-                services.
-              </p>
-            </article>
-            <footer>
-              <span>View all releases</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16px"
-                viewBox="0 -960 960 960"
-                width="16px"
-                fill="#000000"
-              >
-                <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
-              </svg>
-            </footer>
-          </a>
-        </li>
-        <li class="core-resources-item">
-          <a>
-            <header>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="32px"
-                viewBox="0 -960 960 960"
-                width="32px"
-                fill="#ffffff"
-              >
-                <path
-                  d="M440-120v-60h340v-304q0-123.69-87.32-209.84Q605.36-780 480-780q-125.36 0-212.68 86.16Q180-607.69 180-484v244h-20q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v69q0 24.75-17.62 42.37Q804.75-120 780-120H440ZM338.5-418.68q-8.5-8.67-8.5-21.5 0-12.82 8.68-21.32 8.67-8.5 21.5-8.5 12.82 0 21.32 8.68 8.5 8.67 8.5 21.5 0 12.82-8.68 21.32-8.67 8.5-21.5 8.5-12.82 0-21.32-8.68Zm240 0q-8.5-8.67-8.5-21.5 0-12.82 8.68-21.32 8.67-8.5 21.5-8.5 12.82 0 21.32 8.68 8.5 8.67 8.5 21.5 0 12.82-8.68 21.32-8.67 8.5-21.5 8.5-12.82 0-21.32-8.68ZM241-462q-7-106 64-182t177-76q87 0 151 57.5T711-519q-89-1-162.5-50T434.72-698Q419-618 367.5-555.5T241-462Z"
-                />
-              </svg>
-              <h3>Contact Support</h3>
-            </header>
-            <article>
-              <p>
-                Reach our team via live chat, email, or phone. Find the right channel for your issue and expected
-                response times.
-              </p>
-            </article>
-            <footer>
-              <span>Get in touch</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16px"
-                viewBox="0 -960 960 960"
-                width="16px"
-                fill="#000000"
-              >
-                <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
-              </svg>
-            </footer>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="categories blocks">
-      <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
-      <ul class="blocks-list">
-        {{#each categories}} {{#if ../has_multiple_categories}}
-        <li class="blocks-item">
-          <a href="{{url}}" class="blocks-item-link">
-            <span class="blocks-item-title">{{name}}</span>
-            <span class="blocks-item-description">{{excerpt description}}</span>
-          </a>
-        </li>
-        {{else}} {{#each sections}}
-        <li class="blocks-item">
-          <a href="{{url}}" class="blocks-item-link">
-            <span class="blocks-item-title"> {{name}} </span>
-            <span class="blocks-item-description">{{excerpt description}}</span>
-          </a>
-        </li>
-        {{/each}} {{/if}} {{/each}}
-      </ul>
-      {{pagination}}
-    </section>
-
-    {{#if promoted_articles}}
-    <section class="articles">
-      <h2>{{t 'promoted_articles'}}</h2>
-      <ul class="article-list promoted-articles">
-        {{#each promoted_articles}}
-        <li class="promoted-articles-item">
-          <a href="{{url}}">
-            {{title}} {{#if internal}}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              focusable="false"
-              viewBox="0 0 16 16"
-              class="icon-lock"
-              title="{{t 'internal'}}"
-            >
-              <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1" />
-              <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5" />
+  <section class="core-resources">
+    <h2 class="visibility-hidden">Core Resources</h2>
+    <ul class="callout-card-list">
+      <li class="callout-card-item">
+        <a>
+          <header>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff">
+              <path
+                d="M730-450v-60h150v60H730Zm50 290-121-90 36-48 121 90-36 48Zm-82-503-36-48 118-89 36 48-118 89ZM210-200v-160h-70q-24.75 0-42.37-17.63Q80-395.25 80-420v-120q0-24.75 17.63-42.38Q115.25-600 140-600h180l200-120v480L320-360h-50v160h-60Zm250-146v-268l-124 74H140v120h196l124 74Zm100 0v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346ZM300-480Z"
+              />
             </svg>
-            {{/if}}
-          </a>
-        </li>
-        {{/each}}
-      </ul>
-    </section>
-    {{/if}}
+            <h3>Announcements</h3>
+          </header>
+          <article>
+            <p>Important updates, scheduled maintenance, policy changes, and news from the AMAIS team.</p>
+          </article>
+          <footer>
+            <span>See what's new</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+            </svg>
+          </footer>
+        </a>
+      </li>
+      <li class="callout-card-item">
+        <a>
+          <header>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ffffff">
+              <path
+                d="M320-460h320v-60H320v60Zm0 120h320v-60H320v60Zm0 120h200v-60H320v60ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z"
+              />
+            </svg>
+            <h3>Release Notes</h3>
+          </header>
+          <article>
+            <p>
+              Stay up to date with the latest features, improvements, and fixes across all AMAIS products and services.
+            </p>
+          </article>
+          <footer>
+            <span>View all releases</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+            </svg>
+          </footer>
+        </a>
+      </li>
+      <li class="callout-card-item">
+        <a>
+          <header>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ffffff">
+              <path
+                d="M440-120v-60h340v-304q0-123.69-87.32-209.84Q605.36-780 480-780q-125.36 0-212.68 86.16Q180-607.69 180-484v244h-20q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v69q0 24.75-17.62 42.37Q804.75-120 780-120H440ZM338.5-418.68q-8.5-8.67-8.5-21.5 0-12.82 8.68-21.32 8.67-8.5 21.5-8.5 12.82 0 21.32 8.68 8.5 8.67 8.5 21.5 0 12.82-8.68 21.32-8.67 8.5-21.5 8.5-12.82 0-21.32-8.68Zm240 0q-8.5-8.67-8.5-21.5 0-12.82 8.68-21.32 8.67-8.5 21.5-8.5 12.82 0 21.32 8.68 8.5 8.67 8.5 21.5 0 12.82-8.68 21.32-8.67 8.5-21.5 8.5-12.82 0-21.32-8.68ZM241-462q-7-106 64-182t177-76q87 0 151 57.5T711-519q-89-1-162.5-50T434.72-698Q419-618 367.5-555.5T241-462Z"
+              />
+            </svg>
+            <h3>Contact Support</h3>
+          </header>
+          <article>
+            <p>
+              Reach our team via live chat, email, or phone. Find the right channel for your issue and expected response
+              times.
+            </p>
+          </article>
+          <footer>
+            <span>Get in touch</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+            </svg>
+          </footer>
+        </a>
+      </li>
+    </ul>
   </section>
 
-  {{#if help_center.community_enabled}}
-  <section class="section home-section community">
-    <h2>{{t 'community'}}</h2>
-    {{#link 'community' class='community-link'}} {{t 'join_conversation'}} {{/link}}
-
-    <div class="community-image"></div>
-  </section>
-  {{/if}}
-
-  <section class="section home-section activity">
-    {{#if settings.show_recent_activity}} {{recent_activity}} {{/if}}
+  <section class="journey">
+    <h2 class="section-title">Your Journey with AMAIS</h2>
+    <ul class="journey-list">
+      <li class="journey-item">
+        <header>
+          <h4 class="boxed-text">Create</h4>
+          <h3 class="journey-title">Build beautiful, engaging pages</h3>
+        </header>
+        <article>
+          <ul>
+            <li>
+              <div class="list-decorator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                  fill="var(--pink)"
+                >
+                  <path
+                    d="M501-540ZM80-160v-60h421v60H80Zm100-120q-24 0-42-18t-18-42v-400q0-24 18-42t42-18h600q24 0 42 18t18 42H180v400h321v60H180Zm640 60v-400H621v400h199Zm-214 60q-18 0-31.5-13.5T561-205v-430q0-18 13.5-31.5T606-680h229q18 0 31.5 13.5T880-635v430q0 18-13.5 31.5T835-160H606Zm115-360q12 0 21-9t9-21q0-12-9-21t-21.48-9Q709-580 700-571t-9 21.48q0 11.52 9 20.52t21 9Zm0 100Z"
+                  />
+                </svg>
+                <span>CMS</span>
+              </div>
+              <div class="list-content">
+                <h5>Website Management</h5>
+                <p>Content, layouts, SEO, A/B testing &amp; personalisation</p>
+              </div>
+              <div class="list-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                  <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="list-decorator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                  fill="var(--pink)"
+                >
+                  <path
+                    d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm56-97h489L578-473 446-302l-93-127-117 152Zm-56 97v-600 600Z"
+                  />
+                </svg>
+                <span>DAM</span>
+              </div>
+              <div class="list-content">
+                <h5>Asset Management</h5>
+                <p>Tagging, renditions, presets &amp; AI imaging</p>
+              </div>
+              <div class="list-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                  <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <footer>
+          <a>
+            <span>See More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg
+          ></a>
+        </footer>
+      </li>
+      <li class="journey-item">
+        <header>
+          <h4 class="boxed-text">Connect</h4>
+          <h3 class="journey-title">Launch impactful campaigns</h3>
+        </header>
+        <article>
+          <ul>
+            <li>
+              <div class="list-decorator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                  fill="var(--pink)"
+                >
+                  <path
+                    d="M140-279q-23-5-41.5-21.16Q80-316.31 80-339v-343q0-12 5-22.5t19-17.5l320-158 307 158q9 7 18 20.5t12 24.5h-74L424-813 140-672v393Zm90 159q-24 0-42-18.5T170-180v-407q0-23 18-41.5t42-18.5h590q23 0 41.5 18.5T880-587v407q0 23-18.5 41.5T820-120H230Zm295-258L230-523v343h590v-343L525-378Zm0-67 289-142H236l289 142Zm295-142H230h590Z"
+                  />
+                </svg>
+                <span>MCP</span>
+              </div>
+              <div class="list-content">
+                <h5>Messaging &amp; Communications</h5>
+                <p>Email workflows, chatbots &amp; social messaging</p>
+              </div>
+              <div class="list-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                  <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="list-decorator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                  fill="var(--pink)"
+                >
+                  <path
+                    d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"
+                  />
+                </svg>
+                <span>CDP</span>
+              </div>
+              <div class="list-content">
+                <h5>Customer Data</h5>
+                <p>Unified contacts, integrations &amp; data rules</p>
+              </div>
+              <div class="list-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                  <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <footer>
+          <a>
+            <span>See More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg
+          ></a>
+        </footer>
+      </li>
+      <li class="journey-item">
+        <header>
+          <h4 class="boxed-text">Convert</h4>
+          <h3 class="journey-title">Track engagement and payments</h3>
+        </header>
+        <article>
+          <ul>
+            <li>
+              <div class="list-decorator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                  fill="var(--pink)"
+                >
+                  <path
+                    d="M121-473v-60h126v60H121Zm114 231-40-40 88-88 40 40-88 88Zm48-397-88-88 40-40 88 88-40 40Zm457 480L552-347l-44 136-104-360 352 111-138 49 187 187-65 65ZM437-714v-126h60v126h-60Zm214 75-40-40 88-88 40 40-88 88Z"
+                  />
+                </svg>
+                <span>DXP</span>
+              </div>
+              <div class="list-content">
+                <h5>Digital Experience</h5>
+                <p>Personas, lead scoring &amp; customer journeys</p>
+              </div>
+              <div class="list-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                  <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="list-decorator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32px"
+                  viewBox="0 -960 960 960"
+                  width="32px"
+                  fill="var(--pink)"
+                >
+                  <path
+                    d="M140-220v-320 20-220 520Zm576 100L576-260q-13-13-18.5-28t-5.5-30q0-32 23-57t59-25q28 0 44 13t38 35q20-20 36.5-34t45.5-14q37 0 59.5 25.5T880-317q0 15-6 30t-18 27L716-120ZM140-631h680v-109H140v109Zm314 471H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v253q-35-25-76.5-39T716-540q-38 0-74 10t-67 28H140v282h299q2 15.84 6 30.92 4 15.08 9 29.08Z"
+                  />
+                </svg>
+                <span>PAY</span>
+              </div>
+              <div class="list-content">
+                <h5>Payment Processing</h5>
+                <p>End-to-end payments, 3D Secure &amp; PCI compliant</p>
+              </div>
+              <div class="list-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#000">
+                  <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <footer>
+          <a>
+            <span>See More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg
+          ></a>
+        </footer>
+      </li>
+    </ul>
   </section>
 </div>
