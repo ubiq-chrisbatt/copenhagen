@@ -3,19 +3,18 @@
   <h1>{{t 'oops'}}</h1>
 
   {{#is error 'unauthorized'}}
-    <h2>{{link 'sign_in'}}</h2>
+  <h2>{{link 'sign_in'}}</h2>
+  {{/is}} {{#is error 'forbidden'}}
+  <h2>{{t 'not_authorized'}}</h2>
+  {{/is}} {{#is error 'not_found'}}
+  <h2>{{t 'nonexistent_page'}}</h2>
+  <p>{{t 'mistyped_address_or_moved_page'}}</p>
   {{/is}}
 
-  {{#is error 'forbidden'}}
-    <h2>{{t 'not_authorized'}}</h2>
-  {{/is}}
-
-  {{#is error 'not_found'}}
-    <h2>{{t 'nonexistent_page'}}</h2>
-    <p>{{t 'mistyped_address_or_moved_page'}}</p>
-  {{/is}}
-
-  {{#link 'help_center'}}
-    {{t 'back_to_homepage'}}
-  {{/link}}
+  <footer class="error-page-footer">
+    {{#link 'help_center'}} <span>{{t 'back_to_homepage'}}</span>
+    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+      <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg
+    >{{/link}}
+  </footer>
 </div>
