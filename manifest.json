@@ -20,7 +20,7 @@
           "type": "color",
           "description": "brand_text_color_description",
           "label": "brand_text_color_label",
-          "value": "rgba(162, 0, 115, 1)"
+          "value": "#141312"
         },
         {
           "identifier": "text_color",
@@ -34,28 +34,28 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "rgba(162, 0, 115, 1)"
+          "value": "#141312"
         },
         {
           "identifier": "hover_link_color",
           "type": "color",
           "description": "hover_link_color_description",
           "label": "hover_link_color_label",
-          "value": "rgba(162, 0, 115, 1)"
+          "value": "#141312"
         },
         {
           "identifier": "visited_link_color",
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "rgba(162, 0, 115, 1)"
+          "value": "#141312"
         },
         {
           "identifier": "background_color",
           "type": "color",
           "description": "background_color_description",
           "label": "background_color_label",
-          "value": "rgba(255, 255, 255, 1)"
+          "value": "#ffffff"
         }
       ]
     },
@@ -245,6 +245,12 @@
     {
       "label": "images_group_label",
       "variables": [
+        {
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        },
         {
           "identifier": "community_background_image",
           "type": "file",
