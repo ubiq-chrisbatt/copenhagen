@@ -545,11 +545,12 @@ ul {
 .button-large,
 .hbs-form input[type="submit"] {
   cursor: pointer;
-  background-color: $brand_color;
+  background-color: #fff600;
   border: 0;
-  border-radius: 4px;
+  border-radius: 20px;
   color: $brand_text_color;
   font-size: 14px;
+  font-weight: 700;
   line-height: 2.72;
   min-width: 190px;
   padding: 0 1.9286em;
@@ -600,9 +601,12 @@ ul {
 }
 
 .split-button button {
-  background-color: $brand_color;
+  background-color: #fff600;
   border: 0;
+  border-radius: 20px;
   color: $brand_text_color;
+  font-size: 14px;
+  font-weight: 700;
   height: 32px;
   line-height: 16px;
   outline-color: $brand_color;
