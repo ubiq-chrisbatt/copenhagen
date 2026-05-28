@@ -6093,17 +6093,23 @@ a.section-tree-title h2 {
   font-weight: 400;
 }
 /* Article lists */
+ul.subsection-list,
 ul.article-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem 0;
 }
+ul.subsection-list {
+  padding-bottom: 0;
+}
+ul.subsection-list li,
 ul.article-list li {
   margin: 0;
   padding: 0;
   overflow: visible;
 }
+ul.subsection-list li a,
 ul.article-list li a {
   padding: 0.5rem 1rem;
   display: block;
@@ -6118,6 +6124,7 @@ ul.article-list li a {
     box-shadow 0.35s ease,
     border-color 0.25s ease;
 }
+ul.subsection-list li a:hover,
 ul.article-list li a:hover {
   transform: translateY(-2px);
   box-shadow:

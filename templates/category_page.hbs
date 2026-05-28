@@ -32,7 +32,16 @@
         {{#each sections}}
         <section class="section">
           <a class="section-tree-title" href="{{url}}"><h2>{{name}}</h2></a>
-          {{#if articles}}
+
+          {{#if sections}}
+          <ul class="subsection-list">
+            {{#each sections}}
+            <li class="subsection-list-item">
+              <a href="{{url}}">{{name}}</a>
+            </li>
+            {{/each}}
+          </ul>
+          {{/if}} {{#if articles}}
           <ul class="article-list">
             {{#each articles}}
             <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
